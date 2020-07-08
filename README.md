@@ -5,10 +5,10 @@ Aplicações e atividades desenvolvidas durante a formação Fullstack Master, o
 </p>
 
 <div align="center">
-  <img src="" width="800px" />
+  <img src="https://github.com/ChristopherHauschild/fullstack-master/blob/master/FSM.png?raw=true" width="800px" />
 </div>
 
-## Tecnologias utilizadas: :computer:
+## Algumas das tecnologias utilizadas: :computer:
 <ul>
   <li>HTML, CSS e JavaScript</li>
   <li>Bootstrap, PureCSS e jQuery</li>
