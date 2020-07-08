@@ -2,7 +2,7 @@
 
 <p align="justify">
 Aplicações e atividades desenvolvidas durante a formação Fullstack Master, ofertada pela plataforma DevPleno e lecionada pelo dev com atuação internacional e mestre em SI Tulio Faria. O Fullstack Master é um treinamento online desenvolvido para tornar o aluno um fullstack developer em cerca de 03 meses, trabalhando o backend e o frontend do nível zero ao avançado, com as tecnologias mais presentes no mercado. Para isso, a formação aborda conceitos e prática, além de desenvolver aplicações completas durante o seu decorrer. Para garantir a excelência da formação, a DevPleno oferece um suporte contínuo e de qualidade, além de promover atividades como aulões ao vivo.
-</p>
+</p> <br /> <br />
 
 <div align="center">
   <img src="https://github.com/ChristopherHauschild/fullstack-master/blob/master/FSM.png?raw=true" width="800px" />
