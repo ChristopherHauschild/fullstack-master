@@ -6,7 +6,7 @@ Aplicações e atividades desenvolvidas durante a formação Fullstack Master, o
 
 <div align="center">
   <img src="https://github.com/ChristopherHauschild/fullstack-master/blob/master/FSM.png?raw=true" width="800px" />
-</div>
+</div> <br /> <br />
 
 ## Algumas das tecnologias utilizadas: :computer:
 <ul>
