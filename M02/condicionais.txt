@@ -1,0 +1,22 @@
+Algoritmo "Nota"
+
+var nota : real
+var aprovado : lógico
+
+Início:
+Escreva "Por favor, digite a nota"
+Leia nota
+
+aprovado <- nota >= 60
+
+SE aprovado ENTAO:
+  Escreva "O aluno foi aprovado"
+SENAO
+  SE nota < 20 ENTAO:
+    Escreva "O aluno foi reprovado"
+  SENAO
+    Escreva "O aluno está em recuperação"
+  FIMSE
+FIMSE
+
+Fim "Nota"

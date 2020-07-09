@@ -1,0 +1,71 @@
+- Exercícios
+
+===== 01
+
+Algoritmo "Média"
+
+var num1, num2, num3, num4 : inteiro
+
+Início:
+Escreva "Por favor, insira os 04 números"
+Leia num1
+Leia num2
+Leia num3
+Leia num4
+
+media <- (num1 + num2 + num3 + num4) / 4
+
+Escreva "A média é", media
+
+Fim "Média"
+
+
+===== 02
+
+Algoritmo "Nota"
+
+var nota, restante : real
+
+Início:
+Escreva "Por favor, informe sua nota"
+Leia nota
+
+restante <- 60 - nota
+
+Escreva "Você precisa de", restante, "pontos"
+
+Fim "Nota"
+
+
+===== 03
+
+Algoritmo "Temperatura"
+
+var celsius, fahrenheit : real
+
+Início:
+Escreva "Por favor, informe a temperatura em Celsius"
+Leia celsius
+
+fahrenheit <- (celsius * 9/5) + 32
+
+Escreva "A temperatura", celsius, "celsius é", fahrenheit, "em fahrenheit"
+
+Fim "Temperatura"
+
+
+===== 04
+
+Algoritmo "Km"
+
+var distKm, distM : real
+
+Início:
+Escreva "Por favor, informe a distância em quilômetros"
+Leia distKm
+
+distM <- distKm * 0.621371
+
+Escreva "A distância", distKm, "km é", distM, "mi"
+
+Fim "Km"

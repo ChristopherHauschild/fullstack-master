@@ -1,0 +1,22 @@
+- Pensamento computacional
+  -> quebrar problemas em sequências de passos menores
+  -> passos precisos, bem definidos
+
+- Algoritmos
+  -> sequência de passos ordenados e finitos
+
+- Pseudo-código
+  -> variáveis - espaços em memória onde dados podem ser armazenados
+  -> representação mais codificada dos problemas
+  -> algoritmos mais estruturados
+
+- Variáveis literais
+  -> strings / texto
+  -> concatenação
+
+-> Variáveis lógicas
+  -> verdadeiro ou falso
+  -> operadores relacionais
+     =, <, <=, >=, >, <>
+
+-> Condicionais

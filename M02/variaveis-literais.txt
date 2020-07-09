@@ -1,0 +1,18 @@
+===== strings / texto
+
+Algoritmo "Nome"
+
+var primeiroN, sobrenome, nomeC : literais
+
+Início:
+Escreva "Informe seu primeiro nome"
+Leia primeiroN
+
+Escreva "Informe seu sobrenome"
+Leia sobrenome
+
+nomeC <- primeiroN + "" + sobrenome // concatenação
+
+Escreva "Seu nome completo é: ", nomeC
+
+Final "Nome"

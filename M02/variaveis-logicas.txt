@@ -1,0 +1,12 @@
+// verdadeiro || falso
+
+Algoritmo "Lógico"
+
+var ehAdmin : lógico
+var codigo : inteiro
+
+Início:
+Leia codigo
+ehAdmin <- codigo = 1
+
+Final "Lógico"
