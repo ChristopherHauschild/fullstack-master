@@ -1,0 +1,32 @@
+- Lib UI
+- Descreve a interface
+- Define como ocorre atualização da interface
+
+- Virtual DOM ->  ReactDOM  -> DOM
+               (reconciliation)
+
+- JSX
+  - sintaxe utilizada pelo React
+  - transpila para código HTML
+
+- SSR
+  - gera V.DOM no server
+          \/
+         R.DOM
+          \/
+       DOM(HOME) -> cliente
+
+- Componentes
+
+- Hooks
+
+- useState
+
+- useEffect
+
+- NextJS
+
+  NEXT.js é mantido pela zeit e pela comunidade open-source, e visa agilizar
+  o processo de construção de um app React oferecendo componentes para rota,
+  suporte a SSR (server side rendering) além de webpack já configurado para React
+  e transpilação de ES6 e ES7 que incluem recursos como async e await.

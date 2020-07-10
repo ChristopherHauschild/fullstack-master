@@ -1,0 +1,36 @@
+- Fullstack
+
+- Stack
+  -> pilha de tecnologias
+  
+  -> backend
+     -> o que roda no servidor
+     -> regras de negócio
+     -> gerenciamento de dados sensíveis
+
+  -> frontend
+     -> o que roda no lado do cliente
+     -> aplica as regras de negócio
+     -> inicia a comunicação
+
+  -> HTTP
+    -> protocolo que permite o encontro do backend com frontend
+
+  frontend -> request  |  <- response backend
+  HTTP METHOD (GET/...)    (HTML,JSON,XML...)
+
+  - RESTApi -> utiliza todos os métodos HTTP
+
+  - HTML
+    -> estrutura da web
+    -> declaração semântica
+    -> marcação de conteúdo
+
+  - CSS
+    -> estilização da web
+    -> folhas de estilo em cascata
+
+  - JavaScript
+    -> dinâmismo da web 
+
+  
