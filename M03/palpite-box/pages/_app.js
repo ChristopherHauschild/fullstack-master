@@ -1,14 +1,18 @@
-import React from "react";
+import React from 'react'
 
-import "../css/styles.css";
+import '../css/styles.css'
 
+import Layout from '../components/Layout'
+
+// pageProps: renderiza propriedades da página atual
 const MyApp = ({ Component, pageProps }) => {
   return (
     <div>
-      <h1 className="bg-red-300 p-8 text-center">MyApp</h1>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </div>
-  );
-};
+  )
+}
 
-export default MyApp;
+export default MyApp

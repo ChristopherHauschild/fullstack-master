@@ -1,28 +1,39 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react'
+import Link from 'next/link'
+
+import useSWR from 'swr'
+import PageTitle from '../components/pageTitle'
+import Loader from '../components/loader'
+
+const fetcher = (...args) => fetch(...args).then(res => res.json())
 
 const Index = () => {
+  const { data, error } = useSWR('/api/get-promo', fetcher)
+  
   return (
     <div>
-      <h1>Hello World!</h1>
-      <div>
-        {/* Link próprio do Next, neste caso aponta 
-            para arquivos no diretório pages
-        */}
-        <Link href="/about">
-          <a>About</a>
-        </Link>
+      <PageTitle title='Home' />
+      <p className='mt-16 text-center text-base'>
+        O restaurante X sempre busca por atender melhor seus clientes. <br />
+        Por isso, estamos sempre abertos a ouvir a sua opinião =).
+      </p>
 
-        <Link href="/contact">
-          <a>Contact</a>
-        </Link>
-
-        <Link href="/search">
-          <a>Search</a>
+      <div className='mt-16 mb-16 text-center'>
+        <Link href='/search'>
+          <a className='bg-teal-500 px-6 py-4 font-bold text-lg rounded-lg shadow-lg text-white hover:shadow'>Dar opinião ou sugestão</a>
         </Link>
       </div>
-    </div>
-  );
-};
 
-export default Index;
+      <div className='mt-20'>
+        {!data && <Loader />}
+        {!error && data && data.showCoupon &&
+          <p className='text-center text-lg'>
+            <i>{data.message}</i>
+          </p>
+        }
+      </div>
+    </div>
+  )
+}
+
+export default Index
