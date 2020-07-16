@@ -1,0 +1,7 @@
+ECMAScript (padrão de desenvolvimento) 
+  >> JavaScript (implentação do ECMA)
+    >> engine (execução do código)
+
+-> assíncrono
+-> mono-thread (EventLoop como alternativa para organizar pilha)
+-> funcional

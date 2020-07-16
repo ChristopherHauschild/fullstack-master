@@ -1,0 +1,3 @@
+Executando JavaScript
+
+- Browser's ou Node

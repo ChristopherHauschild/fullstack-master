@@ -1,0 +1,6 @@
+EventLoop -> pilha de comandos a serem executados
+
+Utilização da ferramenta Loupe
+
+setTimeout(() => {}, 0) -> para não bloquear Call Stack
+Call Stack precisa estar limpo para executar outras pilhas (Web Apis)
