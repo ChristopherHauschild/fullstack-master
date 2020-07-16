@@ -1,0 +1,13 @@
+ExpressJS x NextJS
+
+ExpressJS:
+  -> framework simples - adiciona o que você quiser
+  -> api's
+  -> view engine
+
+NextJS:
+  -> api, ssr, renderiza React
+  -> React + ssr
+
+
+EJS >> PHP, JSP (Java Server Pages)
