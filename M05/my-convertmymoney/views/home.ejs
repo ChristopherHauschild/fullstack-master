@@ -1,5 +1,37 @@
 <%- include('header') %>
-
-<h1>Hello ConvertMyMoney</h1>
-
+<div class="container">
+  <div class="left">
+    <h1>ConvertMyMoney</h1>
+    <h3>Realize a conversão monetária das principais moedas mundiais</h3>
+    <form class="form" method="GET" action="/quotation">
+      <div class="selects">
+        <select name="by">
+          <option value="BRL">Real (BRL)</option>
+          <option value="USD">Dólar Americano (USD)</option>
+          <option value="GBP">Libra Esterlina (GBP)</option>
+          <option value="EUR">Euro (EUR)</option>
+          <option value="JPY">Yene (JPY)</option>
+        </select>
+        <select name="from">
+          <option value="BRL">Real (BRL)</option>
+          <option value="USD" selected="selected">Dólar Americano (USD)</option>
+          <option value="GBP">Libra Esterlina (GBP)</option>
+          <option value="EUR">Euro (EUR)</option>
+          <option value="JPY">Yene (JPY)</option>
+        </select>
+      </div>
+      <input
+        required
+        type="number"
+        min="0"
+        name="quantity"
+        placeholder="Informe a quantidade monetária"
+      />
+      <button class="button-home">Converter!</button>
+    </form>
+  </div>
+  <div class="right">
+    <h1>Hello Left</h1>
+  </div>
+</div>
 <%- include('footer') %>

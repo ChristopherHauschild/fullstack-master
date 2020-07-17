@@ -1,0 +1,28 @@
+<%- include('header') %>
+<div class="container">
+  <div class="left">
+    <h1>Hello quotation</h1>
+    <div class="containerQuotation">
+      <div class="card-container">
+        <div class="card-header">
+          <p><%= by %></p>
+        </div>
+        <p><%= quantity %></p>
+      </div>
+      <p><strong> --> </strong></p>
+      <div class="card-container">
+        <div class="card-header">
+          <p><%= from %></p>
+        </div>
+        <p><%= quantity %></p>
+      </div>
+    </div>
+    <a class="link-quotation" href="/">
+      <button class="button-quotation">Nova conversão</button>
+    </a>
+  </div>
+  <div class="right">
+    <h1>Hello Left</h1>
+  </div>
+</div>
+<%- include('footer') %>

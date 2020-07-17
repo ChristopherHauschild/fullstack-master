@@ -1,0 +1,170 @@
+body {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+
+  background-color: #e9e3e3;
+}
+h1 {
+  font-size: 2.7rem;
+  margin-bottom: 5px;
+}
+
+h3 {
+  width: 80%;
+  color: #0006;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+
+  width: 100%;
+  height: auto;
+  margin: 60px 100px;
+
+  border-radius: 3px;
+  background-color: aqua;
+  box-shadow: 2px 2px 3px 0px #0004;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  width: 45%;
+  height: 100%;
+
+  background-color: brown;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+
+  width: 55%;
+  height: 100%;
+
+  background-color: burlywood;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  margin: 30px 0px;
+}
+
+.selects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 75%;
+}
+
+select {
+  width: 48%;
+  height: 40px;
+
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px 0px #0002;
+}
+
+input {
+  width: 75%;
+  height: 40px;
+  margin-top: 18px;
+
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px 0px #0002;
+}
+
+.button-home {
+  width: 30%;
+  margin-top: 38px;
+  padding: 10px 30px;
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 2px 2px 3px 0px #0003;
+}
+
+.button-home:hover {
+  background-color: #0006;
+}
+
+.link-quotation {
+  width: 65%;
+  margin-top: 50px;
+}
+
+.button-quotation {
+  width: 100%;
+  height: 100%;
+
+  padding: 10px 30px;
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 2px 2px 3px 0px #0003;
+}
+
+.button-quotation:hover {
+  background-color: #0006;
+}
+
+.containerQuotation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 65%;
+  margin-top: 50px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 40%;
+  height: 120px;
+
+  font-size: 1.4rem;
+
+  text-align: center;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 2px solid chartreuse;
+  background-color: blueviolet;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 40%;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  background-color: chartreuse;
+}
