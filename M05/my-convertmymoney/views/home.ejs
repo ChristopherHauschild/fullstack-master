@@ -1,23 +1,23 @@
 <%- include('header') %>
+
 <div class="container">
-  <div class="left">
-    <h1>ConvertMyMoney</h1>
-    <h3>Realize a conversão monetária das principais moedas mundiais</h3>
+  <div class="left-home">
+    <h1>ConvertMy<span>Money</span></h1>
+    <h3 class="subtitle">
+      Realize a conversão monetária para as principais moedas mundiais
+    </h3>
     <form class="form" method="GET" action="/quotation">
       <div class="selects">
         <select name="by">
-          <option value="BRL">Real (BRL)</option>
-          <option value="USD">Dólar Americano (USD)</option>
-          <option value="GBP">Libra Esterlina (GBP)</option>
-          <option value="EUR">Euro (EUR)</option>
-          <option value="JPY">Yene (JPY)</option>
+          <option value="BRL-BRL">Real (BRL)</option>
         </select>
         <select name="from">
-          <option value="BRL">Real (BRL)</option>
-          <option value="USD" selected="selected">Dólar Americano (USD)</option>
-          <option value="GBP">Libra Esterlina (GBP)</option>
-          <option value="EUR">Euro (EUR)</option>
-          <option value="JPY">Yene (JPY)</option>
+          <option value="USD-BRL" selected="selected"
+            >Dólar Americano (USD)</option
+          >
+          <option value="GBP-BRL">Libra Esterlina (GBP)</option>
+          <option value="EUR-BRL">Euro (EUR)</option>
+          <option value="JPY-BRL">Yene (JPY)</option>
         </select>
       </div>
       <input
@@ -30,8 +30,14 @@
       <button class="button-home">Converter!</button>
     </form>
   </div>
-  <div class="right">
-    <h1>Hello Left</h1>
-  </div>
+  <div
+    class="right-home"
+    style="
+      background-image: url('images/back-finance.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    "
+  ></div>
+  <%- include('footer') %>
 </div>
-<%- include('footer') %>
