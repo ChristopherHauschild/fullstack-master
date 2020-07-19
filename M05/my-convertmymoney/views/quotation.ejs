@@ -2,7 +2,9 @@
 <div class="container-quotation">
   <div class="left-quotation">
     <div class="left-quotation-container">
-      <h1 class="title-convert">Conversão Concluída!</h1>
+      <h1 class="title-convert">
+        Conversão Concluída!
+      </h1>
       <h3>Valor convertido de <%= titleBy %> para <%= titleFrom %></h3>
       <div class="containerQuotation">
         <div class="card-convert-container">
@@ -28,7 +30,14 @@
         </div>
       </div>
       <a class="link-quotation" href="/">
-        <button class="button-quotation">Nova conversão</button>
+        <button class="button-quotation">
+          <i
+            class="fa fa-retweet fa-lg"
+            aria-hidden="true"
+            style="margin-right: 6px;"
+          ></i>
+          Nova conversão
+        </button>
       </a>
     </div>
     <h3 class="quotation-mobile">
@@ -36,7 +45,9 @@
     </h3>
   </div>
   <div class="right-quotation" style="background-color: #20232a;">
-    <h1 class="title-quotation">Cotação Monetária</h1>
+    <h1 class="title-quotation">
+      Cotação Monetária <small><a href="/graphic">Ver Gráfico</a></small>
+    </h1>
 
     <div class="card-code-quotation-container">
       <div class="card-code-quotation">
@@ -45,7 +56,12 @@
           <img src="images/USD-BRL.png" alt="Estados Unidos" />
         </div>
         <div class="card-code-quotation-main">
-          <span><%= USDAverage %></span>
+          <div class="card-code-quotation-content">
+            <span class="card-code-quotation-description">
+              Média recente
+            </span>
+            <span><%= USDAverage %></span>
+          </div>
         </div>
         <div class="card-code-quotation-footer">
           <div class="card-code-quotation-footer-left">
@@ -62,7 +78,12 @@
           <img src="images/EUR-BRL.png" alt="Europe" />
         </div>
         <div class="card-code-quotation-main">
-          <span><%= EURAverage %></span>
+          <div class="card-code-quotation-content">
+            <span class="card-code-quotation-description">
+              Média recente
+            </span>
+            <span><%= EURAverage %></span>
+          </div>
         </div>
         <div class="card-code-quotation-footer">
           <div class="card-code-quotation-footer-left">
@@ -79,7 +100,12 @@
           <img src="images/GBP-BRL.png" alt="Reino Unido" />
         </div>
         <div class="card-code-quotation-main">
-          <span><%= GBPAverage %></span>
+          <div class="card-code-quotation-content">
+            <span class="card-code-quotation-description">
+              Média recente
+            </span>
+            <span><%= GBPAverage %></span>
+          </div>
         </div>
         <div class="card-code-quotation-footer">
           <div class="card-code-quotation-footer-left">
@@ -96,7 +122,12 @@
           <img src="images/JPY-BRL.png" alt="Yene" />
         </div>
         <div class="card-code-quotation-main">
-          <span><%= JPYAverage %></span>
+          <div class="card-code-quotation-content">
+            <span class="card-code-quotation-description">
+              Média recente
+            </span>
+            <span><%= JPYAverage %></span>
+          </div>
         </div>
         <div class="card-code-quotation-footer">
           <div class="card-code-quotation-footer-left">

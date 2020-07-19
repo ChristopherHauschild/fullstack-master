@@ -73,15 +73,51 @@ router.get("/quotation", async (req, res) => {
     convert,
     USDAverage: format.formatUSD(parseFloat(calcs.average(USD.high, USD.low))),
     USDHigh: format.formatUSD(parseFloat(USD.high)),
+    USDHighNum: parseFloat(USD.high),
+    USDLowNum: parseFloat(USD.low),
     USDLow: format.formatUSD(parseFloat(USD.low)),
     GBPAverage: format.formatGBP(parseFloat(calcs.average(GBP.high, GBP.low))),
     GBPHigh: format.formatGBP(parseFloat(GBP.high)),
+    GBPHighNum: parseFloat(GBP.high),
+    GBPLowNum: parseFloat(GBP.low),
     GBPLow: format.formatGBP(parseFloat(GBP.low)),
     EURAverage: format.formatEUR(parseFloat(calcs.average(EUR.high, EUR.low))),
     EURHigh: format.formatEUR(parseFloat(EUR.high)),
+    EURHighNum: parseFloat(EUR.high),
+    EURLowNum: parseFloat(EUR.low),
     EURLow: format.formatEUR(parseFloat(EUR.low)),
     JPYAverage: format.formatJPY(parseFloat(calcs.average(JPY.high, JPY.low))),
     JPYHigh: format.formatJPY(parseFloat(JPY.high)),
+    JPYHighNum: parseFloat(JPY.high),
+    JPYLowNum: parseFloat(JPY.low),
+    JPYLow: format.formatJPY(parseFloat(JPY.low)),
+  });
+});
+
+router.get("/graphic", async (req, res) => {
+  const allCode = await api.allQuotation();
+
+  const USD = await allCode.USD;
+  const GBP = await allCode.GBP;
+  const EUR = await allCode.EUR;
+  const JPY = await allCode.JPY;
+
+  res.render("graphic", {
+    USDHigh: format.formatUSD(parseFloat(USD.high)),
+    USDHighNum: parseFloat(USD.high),
+    USDLowNum: parseFloat(USD.low),
+    USDLow: format.formatUSD(parseFloat(USD.low)),
+    GBPHigh: format.formatGBP(parseFloat(GBP.high)),
+    GBPHighNum: parseFloat(GBP.high),
+    GBPLowNum: parseFloat(GBP.low),
+    GBPLow: format.formatGBP(parseFloat(GBP.low)),
+    EURHigh: format.formatEUR(parseFloat(EUR.high)),
+    EURHighNum: parseFloat(EUR.high),
+    EURLowNum: parseFloat(EUR.low),
+    EURLow: format.formatEUR(parseFloat(EUR.low)),
+    JPYHigh: format.formatJPY(parseFloat(JPY.high)),
+    JPYHighNum: parseFloat(JPY.high),
+    JPYLowNum: parseFloat(JPY.low),
     JPYLow: format.formatJPY(parseFloat(JPY.low)),
   });
 });
