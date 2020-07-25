@@ -1,0 +1,5 @@
+Configurando VSCode para mostrar o caminho do arquivo
+
+settings.json >
+  "workbench.editor.labelFormat": "short",
+  "breadcrumbs.enabled": true,
