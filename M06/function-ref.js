@@ -43,6 +43,7 @@ function ver(err, success) {
 /* 
   bind -> cria nova função, injetando contexto (neste caso null)
   e fixando params (path), da direita para esquerda
+  -> faz a referência para função ver
 */
 fs.readdir(path, ver.bind(null, path, "outro"));
 
